@@ -23,7 +23,7 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: React.ElementType; // More specific type instead of `any`
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
@@ -83,7 +83,7 @@ export const MovingBorder = ({
   ry?: string;
   [key: string]: any;
 }) => {
-  const pathRef = useRef<any>();
+  const pathRef = useRef<SVGRectElement | null>(null); // Type the ref to SVGRectElement
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
@@ -130,7 +130,7 @@ export const MovingBorder = ({
           top: 0,
           left: 0,
           display: "inline-block",
-          transform,
+          transform, // inferred from useMotionTemplate
         }}
       >
         {children}

@@ -5,7 +5,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -58,7 +57,9 @@ const Cards = () => {
       <h4 className="py-1 px-6 bg-[#9673d4] text-white font-semibold rounded-xl">
         Words from Others
       </h4>
-      <h2 className="text-4xl font-semibold">It's not just us.</h2>
+      <h2 className="text-4xl font-semibold">
+        <p>It&apos;s a great day!</p>
+      </h2>
       <h3 className="text-2xl text-muted-foreground">
         Here's what others have to say about us.
       </h3>

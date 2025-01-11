@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { PencilIcon, UsersRound } from "lucide-react";
-import { ShootingStars } from "../ui/shooting-stars";
-import { StarsBackground } from "../ui/stars-background";
+// import { ShootingStars } from "../ui/shooting-stars";
+// import { StarsBackground } from "../ui/stars-background";
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
-import { Boxes } from "../ui/background-boxes";
-import { BackgroundLines } from "../ui/background-lines";
+// import { Boxes } from "../ui/background-boxes";
+// import { BackgroundLines } from "../ui/background-lines";
 
 const Hero = () => {
   return (

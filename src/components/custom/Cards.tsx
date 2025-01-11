@@ -61,7 +61,7 @@ const Cards = () => {
         <p>It&apos;s a great day!</p>
       </h2>
       <h3 className="text-2xl text-muted-foreground">
-        Here's what others have to say about us.
+        Here&apos;s what others have to say about us.
       </h3>
 
       <div className="grid grid-cols-3 gap-5 px-8 py-10">

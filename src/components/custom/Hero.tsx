@@ -3,52 +3,46 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { PencilIcon, UsersRound } from "lucide-react";
-// import { ShootingStars } from "../ui/shooting-stars";
-// import { StarsBackground } from "../ui/stars-background";
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
 import { Boxes } from "../ui/background-boxes";
-// import { BackgroundLines } from "../ui/background-lines";
 
 const Hero = () => {
   return (
     <BackgroundBeamsWithCollision>
-      {/* <BackgroundLines> */}
-      <div className="container mx-auto mt-12 flex items-center gap-8 flex-col px-20">
-        {/* BUTTON */}
-        <h4 className="py-1 px-6 bg-[#9673d4] text-white font-semibold rounded-xl z-20">
+      <div className="container mx-auto mt-12 flex flex-col items-center gap-8 px-6 sm:px-10 md:px-20">
+        {/* Header Button */}
+        <h4 className="py-2 px-6 bg-[#9673d4] text-white font-semibold rounded-full text-sm md:text-base z-20">
           Unleash Your Imagination!
         </h4>
-        {/* TEXT */}
-        <div className="space-y-6 flex flex-col items-center z-20">
-          <h1 className="text-6xl font-extrabold text-center">
+
+        {/* Main Text Section */}
+        <div className="space-y-6 text-center z-20">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
             Unlock Your Creativity with Creativerse Blogs
           </h1>
-          <p className="text-gray-500 text-center text-xl md:max-w-[800px]">
+          <p className="text-gray-500 text-base sm:text-lg md:text-xl md:max-w-[800px] mx-auto">
             Explore a world where AI enhances your creativity! Creativerse AI
             empowers you to write blogs effortlessly by providing AI-driven text
             suggestions and images.
           </p>
         </div>
-        {/* TWO BTN */}
-        <div className="flex gap-7 z-20">
+
+        {/* Action Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 z-20">
           <Button
-            variant={"outline"}
-            className="p-6 rounded-full border-2 text-[16px]"
+            variant="outline"
+            className="p-4 sm:p-5 rounded-full border-2 text-sm sm:text-base flex items-center gap-2"
           >
-            <PencilIcon /> Try our editor now
+            <PencilIcon className="w-5 h-5" /> Try our editor now
           </Button>
-          <Button className="bg-blue-950 p-6 rounded-full hover:bg-blue-950 text-[16px]">
-            <UsersRound /> Join the Comunity
+          <Button className="bg-blue-950 text-white p-4 sm:p-5 rounded-full hover:bg-blue-950 text-sm sm:text-base flex items-center gap-2">
+            <UsersRound className="w-5 h-5" /> Join the Community
           </Button>
         </div>
 
+        {/* Background Animation */}
         <Boxes className="z-0" />
-
-        {/* Starshooting and background bane sathe un comment karje */}
-        {/* <ShootingStars /> */}
-        {/* <StarsBackground /> */}
       </div>
-      {/* </BackgroundLines> */}
     </BackgroundBeamsWithCollision>
   );
 };

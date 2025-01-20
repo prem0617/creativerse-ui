@@ -58,14 +58,14 @@ const Cards = () => {
       <h4 className="py-1 px-6 bg-[#9673d4] text-white font-semibold rounded-xl">
         Words from Others
       </h4>
-      <h2 className="text-4xl font-semibold">
+      <h2 className="text-2xl md:text-4xl font-semibold">
         <p>It&apos;s a great day!</p>
       </h2>
       <h3 className="text-2xl text-muted-foreground">
         Here&apos;s what others have to say about us.
       </h3>
 
-      <div className="grid grid-cols-3 gap-5 px-8 py-10">
+      {/* <div className="grid grid-cols-3 gap-5 px-8 py-10">
         {projects.map((project, index) => (
           <HoverBorderGradient as={"div"} key={index}>
             <Card className="hover:shadow-xl transition-all duration-300">
@@ -79,11 +79,11 @@ const Cards = () => {
             </Card>
           </HoverBorderGradient>
         ))}
-      </div>
+      </div> */}
 
-      <h1 className="bg-gradient-to-r from-yellow-300 via-orange-300 to-green-300 bg-clip-text text-transparent font-bold text-4xl">
+      {/* <h1 className="bg-gradient-to-r from-yellow-300 via-orange-300 to-green-300 bg-clip-text text-transparent font-bold text-2xl md:text-4xl">
         Extra Card (Gradient Text) (Edit color from Components/custom/cards)
-      </h1>
+      </h1> */}
 
       <HoverEffect items={projects} />
     </div>

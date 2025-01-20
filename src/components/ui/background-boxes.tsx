@@ -24,7 +24,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
   const cols = 30; // Adjust this to reduce the number of columns rendered at once
 
   // Cache the random color for hover effect
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  // const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   // Cache random colors to avoid recalculating them on each render
   const colorMap = useMemo(() => {
@@ -58,8 +58,8 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
                 transition: { duration: 2 },
               }}
               className="w-16 h-8 border-r border-t border-slate-200 relative"
-              onMouseEnter={() => setHoveredIndex(i * cols + j)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              // onMouseEnter={() => setHoveredIndex(i * cols + j)}
+              // onMouseLeave={() => setHoveredIndex(null)}
             >
               {i % 2 === 0 && j % 2 === 0 ? (
                 <svg

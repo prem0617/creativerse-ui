@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { IconClipboard } from "@tabler/icons-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"; // Ensure this utility function exists or use classnames
 
 export const ButtonsCard = ({
   children,

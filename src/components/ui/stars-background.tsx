@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"; // If 'cn' is custom, ensure it's available or use classnames
 import React, {
   useState,
   useEffect,
@@ -8,6 +8,7 @@ import React, {
   useCallback,
 } from "react";
 
+// Types for Star and Background
 interface StarProps {
   x: number;
   y: number;
@@ -34,9 +35,9 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
   className,
 }) => {
   const [stars, setStars] = useState<StarProps[]>([]);
-  const canvasRef: RefObject<HTMLCanvasElement> =
-    useRef<HTMLCanvasElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null); // Corrected this line
 
+  // Function to generate stars
   const generateStars = useCallback(
     (width: number, height: number): StarProps[] => {
       const area = width * height;
@@ -65,6 +66,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     ]
   );
 
+  // Update stars when window resizes
   useEffect(() => {
     const updateStars = () => {
       if (canvasRef.current) {
@@ -100,6 +102,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     generateStars,
   ]);
 
+  // Render stars on canvas
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;

@@ -1,3 +1,5 @@
+"use client"; // Ensures this component is treated as a client-side component
+
 import React from "react";
 
 const Navbar = () => {

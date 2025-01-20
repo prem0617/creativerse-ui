@@ -8,10 +8,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "../ui/moving-border";
+// import { Button } from "../ui/moving-border";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import { HoverEffect } from "../ui/card-hover-effect";
 
+// Example project data
 export const projects = [
   {
     title: "Stripe",

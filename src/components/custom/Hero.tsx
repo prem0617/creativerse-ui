@@ -1,10 +1,12 @@
+"use client"; // This ensures the component is client-side only
+
 import React from "react";
 import { Button } from "../ui/button";
 import { PencilIcon, UsersRound } from "lucide-react";
 // import { ShootingStars } from "../ui/shooting-stars";
 // import { StarsBackground } from "../ui/stars-background";
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
-// import { Boxes } from "../ui/background-boxes";
+import { Boxes } from "../ui/background-boxes";
 // import { BackgroundLines } from "../ui/background-lines";
 
 const Hero = () => {
@@ -40,7 +42,7 @@ const Hero = () => {
           </Button>
         </div>
 
-        {/* <Boxes className="z-0" /> */}
+        <Boxes className="z-0" />
 
         {/* Starshooting and background bane sathe un comment karje */}
         {/* <ShootingStars /> */}

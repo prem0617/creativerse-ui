@@ -1,19 +1,22 @@
 import Cards from "@/components/custom/Cards";
 import Hero from "@/components/custom/Hero";
 import Navbar from "@/components/custom/Navbar";
-import ThreeImage from "@/components/custom/ThreeImage";
+import ThreeImageClient from "@/components/custom/ThreeImageClient"; // Import the client-side component
 
 export default function Home() {
   return (
-    <div>
+    <main>
+      {/* Navbar Section */}
       <Navbar />
 
+      {/* Hero Section */}
       <Hero />
 
-      {/* Three Image */}
-      <ThreeImage />
+      {/* Three Image Section (client-side) */}
+      <ThreeImageClient />
 
+      {/* Cards Section */}
       <Cards />
-    </div>
+    </main>
   );
 }
